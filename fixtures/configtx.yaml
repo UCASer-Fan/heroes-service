@@ -50,7 +50,6 @@ Organizations:
 
         # ID to load the MSP definition as
         ID: org1.hf.chainhero.io
-        #ID: KongyixueyuanOrg
 
         MSPDir: crypto-config/peerOrganizations/org1.hf.chainhero.io/msp
 
