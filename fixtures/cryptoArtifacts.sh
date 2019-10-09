@@ -38,8 +38,8 @@ function replaceName() {
 		OPTS="-i"
 	fi
 
-    sed $OPTS "s/example/kevin.kongyixueyuan/g" crypto-config.yaml
-    sed $OPTS "s/example/kevin.kongyixueyuan/g" configtx.yaml
+    sed $OPTS "s/kevin.kongyixueyuan.com/hf.chainhero.io/g" crypto-config.yaml
+    sed $OPTS "s/kevin.kongyixueyuan.com/hf.chainhero.io/g" configtx.yaml
 }
 
 
@@ -94,7 +94,7 @@ function generateChannelArtifacts() {
 	echo "#######    Generating anchor peer update for Org1MSP   ##########"
 	echo "#################################################################"
 	#$CONFIGTXGEN -profile OneOrgChannel -outputAnchorPeersUpdate ./artifacts/Org1MSPanchors.tx -channelID $CHANNEL_NAME -asOrg Org1MSP
-    $CONFIGTXGEN -profile OneOrgChannel -outputAnchorPeersUpdate ./artifacts/Org1MSPanchors.tx -channelID $CHANNEL_NAME -asOrg KongyixueyuanOrg
+    $CONFIGTXGEN -profile OneOrgChannel -outputAnchorPeersUpdate ./artifacts/Org1MSPanchors.tx -channelID $CHANNEL_NAME# -asOrg KongyixueyuanOrg
 
 	echo
 	echo "#################################################################"
