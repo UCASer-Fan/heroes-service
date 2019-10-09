@@ -46,10 +46,11 @@ Organizations:
         # DefaultOrg defines the organization which is used in the sampleconfig
         # of the fabric.git development environment
         # Name: Org1MSP
-        Name: ChainHeroOrganization1
+        Name: KongyixueyuanOrg
 
         # ID to load the MSP definition as
         ID: org1.hf.chainhero.io
+        #ID: KongyixueyuanOrg
 
         MSPDir: crypto-config/peerOrganizations/org1.hf.chainhero.io/msp
 
@@ -59,13 +60,13 @@ Organizations:
         Policies:
             Readers:
                 Type: Signature
-                Rule: "OR('ChainHeroOrganization1.admin', 'ChainHeroOrganization1.peer', 'ChainHeroOrganization1.client')"
+                Rule: "OR('KongyixueyuanOrg.admin', 'KongyixueyuanOrg.peer', 'KongyixueyuanOrg.client')"
             Writers:
                 Type: Signature
-                Rule: "OR('ChainHeroOrganization1.admin', 'ChainHeroOrganization1.client')"
+                Rule: "OR('KongyixueyuanOrg.admin', 'KongyixueyuanOrg.client')"
             Admins:
                 Type: Signature
-                Rule: "OR('ChainHeroOrganization1.admin')"
+                Rule: "OR('KongyixueyuanOrg.admin')"
 
         #AnchorPeers:
         #    # AnchorPeers defines the location of peers which can be used

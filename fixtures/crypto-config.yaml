@@ -13,9 +13,9 @@ OrdererOrgs:
   - Name: Orderer
     Domain: hf.chainhero.io
     CA:
-        Country: US
-        Province: California
-        Locality: San Francisco
+      Country: US
+      Province: California
+      Locality: San Francisco
     # ---------------------------------------------------------------------------
     # "Specs" - See PeerOrgs below for complete description
     # ---------------------------------------------------------------------------
@@ -32,9 +32,9 @@ PeerOrgs:
     Domain: org1.hf.chainhero.io
     EnableNodeOUs: true
     CA:
-        Country: US
-        Province: California
-        Locality: San Francisco
+      Country: US
+      Province: California
+      Locality: San Francisco
     # ---------------------------------------------------------------------------
     # "Specs"
     # ---------------------------------------------------------------------------

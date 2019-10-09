@@ -11,11 +11,11 @@ OrdererOrgs:
   # Orderer
   # ---------------------------------------------------------------------------
   - Name: Orderer
-    Domain: hf.chainhero.io
+    Domain: kevin.kongyixueyuan.com
     CA:
-        Country: US
-        Province: California
-        Locality: San Francisco
+      Country: US
+      Province: California
+      Locality: San Francisco
     # ---------------------------------------------------------------------------
     # "Specs" - See PeerOrgs below for complete description
     # ---------------------------------------------------------------------------
@@ -29,12 +29,12 @@ PeerOrgs:
   # Org1
   # ---------------------------------------------------------------------------
   - Name: Org1
-    Domain: org1.hf.chainhero.io
+    Domain: org1.kevin.kongyixueyuan.com
     EnableNodeOUs: true
     CA:
-        Country: US
-        Province: California
-        Locality: San Francisco
+      Country: US
+      Province: California
+      Locality: San Francisco
     # ---------------------------------------------------------------------------
     # "Specs"
     # ---------------------------------------------------------------------------
@@ -52,8 +52,8 @@ PeerOrgs:
     #                 Org.Domain, respectively.
     # ---------------------------------------------------------------------------
     # Specs:
-    #   - Hostname: foo # implicitly "foo.org1.hf.chainhero.io"
-    #     CommonName: foo27.org5.hf.chainhero.io # overrides Hostname-based FQDN set above
+    #   - Hostname: foo # implicitly "foo.org1.kevin.kongyixueyuan.com"
+    #     CommonName: foo27.org5.kevin.kongyixueyuan.com # overrides Hostname-based FQDN set above
     #   - Hostname: bar
     #   - Hostname: baz
     # ---------------------------------------------------------------------------

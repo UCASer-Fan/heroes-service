@@ -23,10 +23,10 @@ Organizations:
 
         # ID to load the MSP definition as
         #ID: OrdererMSP
-        ID: hf.chainhero.io
+        ID: kevin.kongyixueyuan.com
 
         # MSPDir is the filesystem path which contains the MSP configuration
-        MSPDir: crypto-config/ordererOrganizations/hf.chainhero.io/msp
+        MSPDir: crypto-config/ordererOrganizations/kevin.kongyixueyuan.com/msp
 
         # Policies defines the set of policies at this level of the config tree
         # For organization policies, their canonical path is usually
@@ -46,13 +46,13 @@ Organizations:
         # DefaultOrg defines the organization which is used in the sampleconfig
         # of the fabric.git development environment
         # Name: Org1MSP
-        Name: ChainHeroOrganization1
+        Name: KongyixueyuanOrg
 
         # ID to load the MSP definition as
-        ID: org1.hf.chainhero.io
+        ID: org1.kevin.kongyixueyuan.com
         #ID: KongyixueyuanOrg
 
-        MSPDir: crypto-config/peerOrganizations/org1.hf.chainhero.io/msp
+        MSPDir: crypto-config/peerOrganizations/org1.kevin.kongyixueyuan.com/msp
 
         # Policies defines the set of policies at this level of the config tree
         # For organization policies, their canonical path is usually
@@ -60,19 +60,19 @@ Organizations:
         Policies:
             Readers:
                 Type: Signature
-                Rule: "OR('ChainHeroOrganization1.admin', 'ChainHeroOrganization1.peer', 'ChainHeroOrganization1.client')"
+                Rule: "OR('KongyixueyuanOrg.admin', 'KongyixueyuanOrg.peer', 'KongyixueyuanOrg.client')"
             Writers:
                 Type: Signature
-                Rule: "OR('ChainHeroOrganization1.admin', 'ChainHeroOrganization1.client')"
+                Rule: "OR('KongyixueyuanOrg.admin', 'KongyixueyuanOrg.client')"
             Admins:
                 Type: Signature
-                Rule: "OR('ChainHeroOrganization1.admin')"
+                Rule: "OR('KongyixueyuanOrg.admin')"
 
         #AnchorPeers:
         #    # AnchorPeers defines the location of peers which can be used
         #    # for cross org gossip communication.  Note, this value is only
         #    # encoded in the genesis block in the Application section context
-        #    - Host: peer0.org1.hf.chainhero.io
+        #    - Host: peer0.org1.kevin.kongyixueyuan.com
         #      Port: 7051
 
 
@@ -186,7 +186,7 @@ Orderer: &OrdererDefaults
     OrdererType: solo
 
     Addresses:
-        - orderer.hf.chainhero.io:7050
+        - orderer.kevin.kongyixueyuan.com:7050
 
     # Batch Timeout: The amount of time to wait before creating a batch
     BatchTimeout: 2s
