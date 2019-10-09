@@ -8,7 +8,7 @@
 					"groups": {
 						"Application": {
 							"groups": {
-								"KongyixueyuanOrg": {
+								"ChainHeroOrganization1": {
 									"groups": {},
 									"mod_policy": "",
 									"policies": {},
@@ -37,7 +37,7 @@
 					"groups": {
 						"Application": {
 							"groups": {
-								"KongyixueyuanOrg": {
+								"ChainHeroOrganization1": {
 									"groups": {},
 									"mod_policy": "",
 									"policies": {},
@@ -86,7 +86,7 @@
 									"mod_policy": "Admins",
 									"value": {
 										"capabilities": {
-											"V1_2": {}
+											"V1_1": {}
 										}
 									},
 									"version": "0"
@@ -116,7 +116,7 @@
 				"channel_id": "chainhero",
 				"epoch": "0",
 				"extension": null,
-				"timestamp": "2019-10-09T07:03:33Z",
+				"timestamp": "2019-10-09T07:45:48Z",
 				"tls_cert_hash": null,
 				"tx_id": "",
 				"type": 2,
