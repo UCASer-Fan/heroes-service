@@ -9,7 +9,7 @@
 #set -e
 
 CHANNEL_NAME=$1
-: ${CHANNEL_NAME:="kevinkongyixueyuan"}
+: ${CHANNEL_NAME:="chainhero"}
 echo $CHANNEL_NAME
 
 export FABRIC_CFG_PATH=$PWD
@@ -80,29 +80,29 @@ function generateChannelArtifacts() {
 	echo "##########################################################"
 	# Note: For some unknown reason (at least for now) the block file can't be
 	# named orderer.genesis.block or the orderer will fail to launch!
-	$CONFIGTXGEN -profile OneOrgOrdererGenesis -outputBlock ./artifacts/genesis.block
+	$CONFIGTXGEN -profile OneOrgOrdererGenesis -outputBlock ./artifacts/orderer.genesis.block
 	#$CONFIGTXGEN -profile OneOrgOrdererGenesis -channelID kevinkongyixueyuan -outputBlock ./artifacts/genesis.block
 
 	echo
 	echo "#################################################################"
 	echo "### Generating channel configuration transaction 'channel.tx' ###"
 	echo "#################################################################"
-	$CONFIGTXGEN -profile OneOrgChannel -outputCreateChannelTx ./artifacts/channel.tx -channelID $CHANNEL_NAME
+	$CONFIGTXGEN -profile OneOrgChannel -outputCreateChannelTx ./artifacts/chainhero.channel.tx -channelID $CHANNEL_NAME
 
 	echo
 	echo "#################################################################"
 	echo "#######    Generating anchor peer update for Org1MSP   ##########"
 	echo "#################################################################"
 	#$CONFIGTXGEN -profile OneOrgChannel -outputAnchorPeersUpdate ./artifacts/Org1MSPanchors.tx -channelID $CHANNEL_NAME -asOrg Org1MSP
-    $CONFIGTXGEN -profile OneOrgChannel -outputAnchorPeersUpdate ./artifacts/Org1MSPanchors.tx -channelID $CHANNEL_NAME# -asOrg KongyixueyuanOrg
+    $CONFIGTXGEN -profile OneOrgChannel -outputAnchorPeersUpdate ./artifacts/org1.chainhero.anchors.tx -channelID $CHANNEL_NAME
 
 	echo
 	echo "#################################################################"
 	echo "# Generating json file for Genesis block, Channel tx and Anchor peer tx #"
 	echo "#################################################################"
-	$CONFIGTXGEN -inspectBlock artifacts/genesis.block > artifacts/genesis.block.json
-	$CONFIGTXGEN -inspectChannelCreateTx artifacts/channel.tx > artifacts/channel.tx.json
-    $CONFIGTXGEN -inspectChannelCreateTx artifacts/Org1MSPanchors.tx > artifacts/Org1MSPanchor.tx.json
+	$CONFIGTXGEN -inspectBlock artifacts/orderer.genesis.block > artifacts/orderer.genesis.block.json
+	$CONFIGTXGEN -inspectChannelCreateTx artifacts/chainhero.channel.tx > artifacts/chainhero.channel.tx.json
+    $CONFIGTXGEN -inspectChannelCreateTx artifacts/org1.chainhero.anchors.tx > artifacts/org1.chainhero.anchors.tx.json
 
 }
 
