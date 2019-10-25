@@ -1,0 +1,21 @@
+SDK created
+bccsp gm keyimport pk is *sm2.PublicKeyRessource management client created
+bccsp gm keyimport pk is *sm2.PublicKeySM3
+Channel created
+SM3
+SM3
+Channel joined
+Initialization Successful
+ccPkg created
+Chaincode installed
+bccsp gm keyimport pk is *sm2.PublicKeybccsp gm keyimport pk is *sm2.PublicKeySM3
+bccsp gm keyimport pk is *sm2.PublicKeybccsp gm keyimport pk is *sm2.PublicKeySM3
+bccsp gm keyimport pk is *sm2.PublicKeySM3
+bccsp gm keyimport pk is *sm2.PublicKeybccsp gm keyimport pk is *sm2.PublicKeySM3
+bccsp gm keyimport pk is *sm2.PublicKeyChaincode instantiated
+bccsp gm keyimport pk is *sm2.PublicKeyChannel client created
+bccsp gm keyimport pk is *sm2.PublicKeybccsp gm keyimport pk is *sm2.PublicKeybccsp gm keyimport pk is *sm2.PublicKeySM3
+Event client created
+Chaincode Installation & Instantiation Successful
+Listening (http://localhost:3000/) ...
+bccsp gm keyimport pk is *sm2.PublicKeybccsp gm keyimport pk is *sm2.PublicKeySM3

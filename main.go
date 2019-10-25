@@ -16,8 +16,8 @@ func main() {
 
 		// Channel parameters
 		ChannelID:     "chainhero",
-		//ChannelConfig: os.Getenv("GOPATH") + "/go/src/github.com/chainHero/heroes-service/fixtures/artifacts/chainhero.channel.tx",
-		ChannelConfig: "/Users/luoming/go/src/github.com/chainHero/heroes-service/fixtures/artifacts/chainhero.channel.tx",
+		ChannelConfig: os.Getenv("GOPATH") + "/src/github.com/chainHero/heroes-service/fixtures/artifacts/chainhero.channel.tx",
+		//ChannelConfig: "/Users/luoming/go/src/github.com/chainHero/heroes-service/fixtures/artifacts/chainhero.channel.tx",
 
 		// Chaincode parameters
 		ChainCodeID:     "heroes-service",
